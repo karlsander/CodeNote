@@ -1,0 +1,25 @@
+summary {
+  position: -webkit-sticky;
+  top: 40px;
+  background-color: #fafafa;
+  margin-left: -22px;
+  padding-left: 6px;
+  width: calc(100% + 44px);
+}
+
+.night-mode summary {
+  background-color: #222;
+}
+
+details[open] summary ~ * {
+  animation: in 0.5s linear;
+}
+
+@keyframes in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

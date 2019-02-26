@@ -1,0 +1,72 @@
+.night-mode .hljs {
+  color: #f7f7f7;
+}
+
+.night-mode .hljs-comment,
+.night-mode .hljs-quote {
+  color: #5d5d5d;
+  font-style: italic;
+}
+
+.night-mode .hljs-doctag,
+.night-mode .hljs-keyword,
+.night-mode .hljs-formula {
+  color: #fbb1f9;
+}
+
+.night-mode .hljs-section,
+.night-mode .hljs-name,
+.night-mode .hljs-selector-tag,
+.night-mode .hljs-deletion,
+.night-mode .hljs-subst {
+  color: #e09690;
+}
+
+.night-mode .hljs-literal {
+  color: #77dfd8;
+}
+
+.night-mode .hljs-string,
+.night-mode .hljs-regexp,
+.night-mode .hljs-addition,
+.night-mode .hljs-attribute,
+.night-mode .hljs-meta-string {
+  color: #cdee69;
+}
+
+.night-mode .hljs-built_in,
+.night-mode .hljs-class .hljs-title {
+  color: #ffe377;
+}
+
+.night-mode .hljs-attr,
+.night-mode .hljs-variable,
+.night-mode .hljs-template-variable,
+.night-mode .hljs-type,
+.night-mode .hljs-selector-class,
+.night-mode .hljs-selector-attr,
+.night-mode .hljs-selector-pseudo,
+.night-mode .hljs-number {
+  color: #cdee69;
+}
+
+.night-mode .hljs-symbol,
+.night-mode .hljs-bullet,
+.night-mode .hljs-link,
+.night-mode .hljs-meta,
+.night-mode .hljs-selector-id,
+.night-mode .hljs-title {
+  color: #9cd9f0;
+}
+
+.night-mode .hljs-emphasis {
+  font-style: italic;
+}
+
+.night-mode .hljs-strong {
+  font-weight: bold;
+}
+
+.night-mode .hljs-link {
+  text-decoration: underline;
+}
