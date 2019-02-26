@@ -1,0 +1,95 @@
+/*
+
+Atom One Dark by Daniel Gamage
+Original One Dark Syntax theme from https://github.com/atom/one-dark-syntax
+
+base:    #282c34
+mono-1:  #abb2bf
+mono-2:  #818896
+mono-3:  #5c6370
+hue-1:   #56b6c2
+hue-2:   #61aeee
+hue-3:   #c678dd
+hue-4:   #98c379
+hue-5:   #e06c75
+hue-5-2: #be5046
+hue-6:   #d19a66
+hue-6-2: #e6c07b
+
+*/
+.night-mode .hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  color: #abb2bf;
+  background: #282c34;
+}
+
+night-mode .hljs-comment,
+night-mode .hljs-quote {
+  color: #5c6370;
+  font-style: italic;
+}
+
+night-mode .hljs-doctag,
+night-mode .hljs-keyword,
+night-mode .hljs-formula {
+  color: #c678dd;
+}
+
+night-mode .hljs-section,
+night-mode .hljs-name,
+night-mode .hljs-selector-tag,
+night-mode .hljs-deletion,
+night-mode .hljs-subst {
+  color: #e06c75;
+}
+
+night-mode .hljs-literal {
+  color: #56b6c2;
+}
+
+night-mode .hljs-string,
+night-mode .hljs-regexp,
+night-mode .hljs-addition,
+night-mode .hljs-attribute,
+night-mode .hljs-meta-string {
+  color: #98c379;
+}
+
+night-mode .hljs-built_in,
+night-mode .hljs-class .hljs-title {
+  color: #e6c07b;
+}
+
+night-mode .hljs-attr,
+night-mode .hljs-variable,
+night-mode .hljs-template-variable,
+night-mode .hljs-type,
+night-mode .hljs-selector-class,
+night-mode .hljs-selector-attr,
+night-mode .hljs-selector-pseudo,
+night-mode .hljs-number {
+  color: #d19a66;
+}
+
+night-mode .hljs-symbol,
+night-mode .hljs-bullet,
+night-mode .hljs-link,
+night-mode .hljs-meta,
+night-mode .hljs-selector-id,
+night-mode .hljs-title {
+  color: #61aeee;
+}
+
+.night-mode .hljs-emphasis {
+  font-style: italic;
+}
+
+.night-mode .hljs-strong {
+  font-weight: bold;
+}
+
+.night-mode .hljs-link {
+  text-decoration: underline;
+}
