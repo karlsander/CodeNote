@@ -1,32 +1,39 @@
 /* github-markdown, github-markdown-mobile are extracted using https://github.com/sindresorhus/generate-github-markdown-css */
 /* .pl styles have been removed, because they refer to prettylights syntax highlighter https://github.com/primer/github-syntax-theme-generator */
 
-@import 'github-markdown.css' screen and (min-width: 520px), print;
+@import "github-markdown.css" screen and (min-width: 520px), print;
 
-@import 'github-markdown-mobile.css' screen and (max-width: 520px);
+@import "github-markdown-mobile.css" screen and (max-width: 520px);
 
-@import 'github-markdown-night-mode.css' screen;
+@import "github-markdown-night-mode.css" screen;
 
 html {
   background-color: white;
+  padding: 0 !important;
 }
 
 .markdown-body {
-  padding-top: 0;
-  padding-bottom: 0;
   --horizontal-padding: 0;
+  padding-bottom: var(--horizontal-padding);
+  padding-top: var(--horizontal-padding);
   padding-left: var(--horizontal-padding);
   padding-right: var(--horizontal-padding);
 }
 
-@supports (padding: constant(safe-area-inset-left)) and (padding: constant(safe-area-inset-right)) {
+@supports (padding: constant(safe-area-inset-left)) and
+  (padding: constant(safe-area-inset-right)) {
   .markdown-body {
-      padding-left: calc(var(--horizontal-padding) + constant(safe-area-inset-left));
-      padding-right: calc(var(--horizontal-padding) + constant(safe-area-inset-right));
+    padding-left: calc(
+      var(--horizontal-padding) + constant(safe-area-inset-left)
+    );
+    padding-right: calc(
+      var(--horizontal-padding) + constant(safe-area-inset-right)
+    );
   }
 }
 
-@supports (padding: env(safe-area-inset-left)) and (padding: env(safe-area-inset-right)) {
+@supports (padding: env(safe-area-inset-left)) and
+  (padding: env(safe-area-inset-right)) {
   .markdown-body {
     padding-left: calc(var(--horizontal-padding) + env(safe-area-inset-left));
     padding-right: calc(var(--horizontal-padding) + env(safe-area-inset-right));
@@ -79,9 +86,8 @@ html {
   background-position: 40% 40%; /* x=roughly align with bullets and between ordinal and text, y=4px down to roughly align to baseline. */
   background-size: 50% 50%; /* Desired size 12px / 21px line-height for Preview */
   -webkit-print-color-adjust: exact; /* Prevents from hiding when printed */
-  opacity: 1.0; /* Otherwise they are 0.4 on iPhone, where it applies disabled effect even with above */
+  opacity: 1; /* Otherwise they are 0.4 on iPhone, where it applies disabled effect even with above */
 }
-
 
 /* GitHub doesn't process figures and images aren't given padding */
 .markdown-body figure {
@@ -92,5 +98,5 @@ html {
 }
 
 .markdown-body figcaption {
-	margin-bottom: 16px; /* same as between paragraphs */
+  margin-bottom: 16px; /* same as between paragraphs */
 }
